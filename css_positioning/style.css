@@ -1,0 +1,37 @@
+.parent {
+  background: aquamarine;
+  height: 75vh;
+  width: 75vw;
+  padding: 1em;
+}
+
+.child-1 {
+  background: red;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* right: 50%; */
+}
+
+.child-2 {
+  /* relative to the parent element and relative to itself / where it would usually be in the regular doc flow of page */
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background: blue;
+  /* top: 150px; */
+  /* bottom: 150px; */
+}
+
+.child-3 {
+  /* Absolute positioned elements are not positioned based on their usual place in the document flow, but based on the position of their ancestor. */
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background: yellow;
+  top: 0;
+  right: 0;
+}

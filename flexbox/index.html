@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <div>
+      <h2>
+        Flex,
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+          >justify-content</a
+        >
+      </h2>
+      <header>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Information</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div>
+        <p>
+          Flex items want to be as small as possible while being on one line.
+          Intrinsic sizing, if items can fit within parent w/o line breaks. If
+          runs out of room, line breaks. Flex-grow (default is 0), flex-shrink
+          (default is 1).
+        </p>
+        <p>
+          Justify content: The CSS justify-content property defines how the
+          browser distributes space between and around content items along the
+          main-axis of a flex container, and the inline axis of a grid
+          container.
+        </p>
+        <p></p>
+      </div>
+    </div>
+
+    <div>
+      <h2>Flex-wrap</h2>
+      <ul class="flex-wrap">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Information</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <section class="cards">
+      <h2>Flex shorthand</h2>
+      <p>flex: flex-grow (1) flex-shrink (1) flex-basis (auto)</p>
+      <p>
+        The flex-basis CSS property sets the initial main size of a flex item.
+        It sets the size of the content box unless otherwise set with
+        box-sizing.
+      </p>
+      <p>
+        align-items controls alignment of items on the cross axis in Flexbox.
+      </p>
+      <div class="columns">
+        <article class="card">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet
+          cumque atque laborum distinctio autem id at ipsam eligendi. Nam natus
+          atque consequatur doloremque sunt? Veniam nisi ex error minima!
+        </article>
+        <article class="card">
+          Align-self: Allows the default alignment along the cross axis to be
+          overridden for individual flex items.
+        </article>
+        <article class="card">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet
+          cumque atque laborum distinctio autem id at ipsam eligendi. Nam natus
+          atque consequatur doloremque sunt? Veniam nisi ex error minima! I am a
+          longer text element. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Maxime totam voluptate enim dignissimos, deleniti
+          provident ratione, aut, aliquid officiis laboriosam soluta illo at
+          accusantium temporibus commodi quibusdam aperiam? Rerum, reiciendis!
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
