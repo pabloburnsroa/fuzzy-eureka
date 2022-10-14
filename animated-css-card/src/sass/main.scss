@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+}
+
+.game {
+  position: relative;
+  width: 11.5em;
+  cursor: pointer;
+}
+
+.rank {
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  right: 1em;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1.125em;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 0.5em 0.5em 0.75em;
+  clip-path: polygon(100% 0%, 100% 100%, 50% 85%, 0 100%, 0px 0px);
+}
+
+.game .streamers {
+  display: flex;
+  text-align: center;
+
+  img {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+  }
+}
+
+.thumbnail {
+  border-radius: 0.5em;
+}
+
+.front {
+  position: relative;
+  .name {
+    margin: 0.75em 0px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(91, 93, 94);
+    font-size: 0.85em;
+    font-weight: 300;
+
+    .viewers {
+      display: flex;
+      align-items: center;
+
+      &::before {
+        content: url('../img/user.png');
+        margin-right: 0.25em;
+      }
+    }
+    .streamers img {
+      border: 2px solid rgb(255, 255, 255);
+
+      &:nth-of-type(1) {
+        transform: translateX(50%);
+        z-index: 3;
+      }
+      &:nth-of-type(2) {
+        transform: translateX(25%);
+        z-index: 2;
+      }
+    }
+  }
+}
+
+.back {
+  display: none;
+}
